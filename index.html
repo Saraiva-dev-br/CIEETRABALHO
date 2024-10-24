@@ -14,8 +14,6 @@
         /* Fontes e layout base */
         body {
             font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
@@ -24,14 +22,12 @@
         header {
             background-color: #4b6e28;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 20px 0;
             position: fixed;
             width: 100%;
             top: 0;
-            left: 0;
             z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Melhoria: adicionar sombra */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         nav ul {
@@ -59,18 +55,18 @@
             padding: 20px;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Melhoria: profundidade */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             animation: fadeIn 1.5s ease-in-out;
         }
 
         h2 {
-            font-size: 2.5rem; /* Melhoria: tipografia */
+            font-size: 2.5rem;
             margin-bottom: 20px;
             text-align: center;
         }
 
         p {
-            font-size: 1.1rem; /* Melhoria: tipografia */
+            font-size: 1.1rem;
         }
 
         /* Estilos para Missão, Visão e Valores */
@@ -114,17 +110,16 @@
 
         /* Melhorias em Imagens */
         img {
-    max-width: 60%; /* Define a largura máxima como 60% da tela */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px;
-    margin: 20px auto; /* Centraliza a imagem */
-    display: block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra nas imagens */
-    opacity: 0;
-    transform: scale(0.95);
-    animation: fadeInImage 2s ease-in-out forwards;
-}
-
+            max-width: 60%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: scale(0.95);
+            animation: fadeInImage 2s ease-in-out forwards;
+        }
 
         /* Melhorias nos formulários */
         form {
@@ -192,9 +187,6 @@
             color: white;
             text-align: center;
             padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
 
         .footer-content {
@@ -214,17 +206,17 @@
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
         <h1>Sementes do Futuro</h1>
         <nav>
             <ul>
-                <li><a href="doações.html">Doações</a></li>
+                <li><a href="doacoes.html">Doações</a></li>
                 <li><a href="visitas.html">Agendar Visita</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="presentation">
+    <section class="container mt-5 presentation">
         <h2>Bem-vindo ao Orfanato Sementes do Futuro</h2>
         <img src="https://digitaispuccampinas.wordpress.com/wp-content/uploads/2016/05/orfanato.jpg" alt="Imagem das crianças">
         <p>No Sementes do Futuro, acreditamos no poder do amor, da educação e da esperança. Aqui, cada criança é uma semente que cuidamos para que floresça e alcance seu pleno potencial.</p>
@@ -249,7 +241,7 @@
     </section>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content container">
             <div class="footer-left">
                 <img class="footer-logo" src="WhatsApp Image 2024-10-15 at 21.47.52.jpeg" alt="Logo Sementes do Futuro" style="width: 100px;">
                 <p>Sementes do Futuro - Cuidando do amanhã, hoje.</p>
@@ -271,6 +263,9 @@
         </div>
         <p>&copy; 2024 Sementes do Futuro. Todos os direitos reservados.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
